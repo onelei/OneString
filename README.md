@@ -1,10 +1,10 @@
-## ![160x160](.\Doc\160x160.png)
+## ![160x160](./Doc/160x160.png)
 
 [OneString]( https://assetstore.unity.com/packages/slug/168465 
 ) is a 0 GC ToString solution. Traditional numbers or bool variables converted to strings will have GC. Mainly because strings are immutable. Each time the string is modified, a new string is renewed. If we
 need to temporarily print a certain value, using the system's ToString function will inevitably generate a new string, which we don't want to see. Therefore, a string that can be used temporarily is needed, and it can be recycled after use. OneString is such a solution. It should be noted that such as the UGUI Text component is used for display, do not use this method. Because the value of text will be modified.
 
-![420x280](.\Doc\420x280.png)
+![420x280](./Doc/420x280.png)
 
 
 
@@ -21,13 +21,13 @@ need to temporarily print a certain value, using the system's ToString function 
 
 Player Settings: Tick Allow ‘unsafe’ Code. 
 
-![PlayerSettings](.\Doc\PlayerSettings.png)                                      
+![PlayerSettings](./Doc/PlayerSettings.png)                                      
 
 Just use ToOneString() function, it will return a string.
 
 ## Documents
 
-[PDF](.\Doc\README.pdf)
+[PDF](./Doc/README.pdf)
 
 ## Release Note
 
