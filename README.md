@@ -1,7 +1,7 @@
 ## ![160x160](./Doc/160x160.png)
 
 [OneString]( https://assetstore.unity.com/packages/slug/168465 
-) is a 0 GC ToString solution. Traditional numbers or bool variables converted to strings will have GC. Mainly because strings are immutable. Each time the string is modified, a new string is renewed. If we
+) is a 0 GC ToString and 0 GC String.Concat solution. Traditional numbers or bool variables converted to strings will have GC. Mainly because strings are immutable. Each time the string is modified, a new string is renewed. If we
 need to temporarily print a certain value, using the system's ToString function will inevitably generate a new string, which we don't want to see. Therefore, a string that can be used temporarily is needed, and it can be recycled after use. OneString is such a solution. It should be noted that such as the UGUI Text component is used for display, do not use this method. Because the value of text will be modified.
 
 ![420x280](./Doc/420x280.png)
@@ -31,9 +31,15 @@ Just use ToOneString() function, it will return a string.
 
 ## Release Note
 
+### 2.0.1
+
+- Add 0 GC OneString.Concat, return OneString
+- Float retains 4 decimal places
+- Code naming convention
+
 ### 1.0.1
 
-Init release 
+- Init release 
 
 ## Contact
 
